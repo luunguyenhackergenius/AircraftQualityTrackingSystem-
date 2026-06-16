@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inspections – AeroTrack</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: bold;
+      color: white;
+    }
+    .badge-Passed  { background-color: #2e7d32; }
+    .badge-Rework  { background-color: #e65100; }
+    .badge-Failed  { background-color: #b71c1c; }
+
+    .no-parts-msg {
+      color: #888;
+      font-style: italic;
+    }
+
+    #successMsg {
+      display: none;
+      background: #e8f5e9;
+      border: 1px solid #a5d6a7;
+      color: #2e7d32;
+      padding: 12px 16px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <h1>AeroTrack Quality System</h1>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="parts.html">Parts</a>
+      <a href="inspections.html">Inspections</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <section class="panel" style="margin-bottom: 25px;">
+      <h2>Log New Inspection</h2>
+
+      <div id="successMsg">✔ Inspection saved successfully!</div>
+
+      <form id="inspectionForm">
+        <label>Select Part</label>
+        <select id="partSelect" required>
+          <option value="">-- Select a Part --</option>
+        </select>
+
+        <label>Inspector Name</label>
+        <input type="text" id="inspectorName" placeholder="Example: John Rivera" required />
+
+        <label>Inspection Result</label>
+        <select id="result" required>
+          <option value="Passed">Passed</option>
+          <option value="Rework">Rework</option>
+          <option value="Failed">Failed</option>
+        </select>
+
+        <label>Notes</label>
+        <textarea id="notes" rows="3" placeholder="Optional inspection notes..."
+          style="padding:10px; border:1px solid #ccc; border-radius:8px; resize:vertical;"></textarea>
+
+        <button type="submit">Save Inspection</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>Inspection Records</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Part Number</th>
+            <th>Serial Number</th>
+            <th>Inspector</th>
+            <th>Result</th>
+            <th>Date</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody id="inspectionsTableBody">
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <script src="js/inspections.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parts Management</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <h1>AeroTrack Quality System</h1>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="parts.html">Parts</a>
+      <a href="inspections.html">Inspections</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h2>Add Aircraft Part</h2>
+
+      <form id="partForm">
+        <label>Part Number</label>
+        <input type="text" id="partNumber" placeholder="Example: A320-445" required />
+
+        <label>Serial Number</label>
+        <input type="text" id="serialNumber" placeholder="Example: SN1001" required />
+
+        <label>Description</label>
+        <input type="text" id="description" placeholder="Example: Turbine Blade" required />
+
+        <label>Status</label>
+        <select id="status" required>
+          <option value="Pending">Pending</option>
+          <option value="Accepted">Accepted</option>
+          <option value="Rework">Rework</option>
+          <option value="Rejected">Rejected</option>
+        </select>
+
+        <button type="submit">Add Part</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>Parts List</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Part Number</th>
+            <th>Serial Number</th>
+            <th>Description</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="partsTableBody">
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="js/parts.js"></script>
+</body>
+</html>
