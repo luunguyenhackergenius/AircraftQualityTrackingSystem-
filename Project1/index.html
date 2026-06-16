@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AeroTrack Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
 
+  <header class="navbar">
+    <h1>AeroTrack Quality System</h1>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="parts.html">Parts</a>
+      <a href="inspections.html">Inspections</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Aircraft Parts Tracking & Quality Management</h2>
+      <p>Track aircraft parts, inspection results, and quality status in one simple system.</p>
+    </section>
+
+    <section class="dashboard-cards">
+      <div class="card">
+        <h3>Total Parts</h3>
+        <p id="totalParts">0</p>
+      </div>
+
+      <div class="card">
+        <h3>Accepted</h3>
+        <p id="acceptedParts">0</p>
+      </div>
+
+      <div class="card">
+        <h3>Rework</h3>
+        <p id="reworkParts">0</p>
+      </div>
+
+      <div class="card">
+        <h3>Rejected</h3>
+        <p id="rejectedParts">0</p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Project Purpose</h2>
+      <p>
+        This web application is designed to help quality inspectors and MRB teams track
+        aircraft parts, inspection results, and quality decisions such as accepted,
+        rework, or rejected.
+      </p>
+    </section>
+  </main>
+
+  <script src="js/parts.js"></script>
+</body>
+</html>
