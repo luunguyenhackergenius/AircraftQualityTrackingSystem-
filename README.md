@@ -35,7 +35,7 @@ The project demonstrates front-end development, data management, business workfl
 
 The dashboard provides a real-time overview of aircraft quality metrics, including accepted, rejected, rework, and pending parts.
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](images/dashboard.png)
 
 ---
 
@@ -43,7 +43,7 @@ The dashboard provides a real-time overview of aircraft quality metrics, includi
 
 Users can search, manage, edit, and review aircraft part records through the Parts Management interface.
 
-![Parts Management](screenshots/parts-management.png)
+![Parts Management](images/parts-management.png)
 
 ---
 
@@ -51,7 +51,7 @@ Users can search, manage, edit, and review aircraft part records through the Par
 
 Inspection records track inspection results, inspectors, defect notes, and corrective actions.
 
-![Inspection Management](screenshots/inspection-management.png)
+![Inspection Management](images/inspection-management.png)
 
 ---
 
@@ -59,7 +59,7 @@ Inspection records track inspection results, inspectors, defect notes, and corre
 
 The inspection form allows inspectors to record quality results, defects, and corrective actions for each aircraft part.
 
-![Inspection Logging](screenshots/inspection-modal.png)
+![Inspection Logging](images/inspection-modal.png)
 
 ---
 
@@ -67,7 +67,7 @@ The inspection form allows inspectors to record quality results, defects, and co
 
 The finalized application design demonstrates the overall workflow and navigation structure of the system.
 
-![System Design](screenshots/system-design.png)
+![System Design](images/system-design.png)
 
 ---
 
@@ -80,7 +80,7 @@ Example endpoints:
 * GET /api/parts
 * GET /api/summary
 
-![Backend API](screenshots/backend-api.png)
+![Backend API](images/backend-api.png)
 
 ---
 
