@@ -51,7 +51,7 @@ Users can search, manage, edit, and review aircraft part records through the Par
 
 Inspection records track inspection results, inspectors, defect notes, and corrective actions.
 
-![Inspection Management](images/inspection-management.png)
+![Inspection Management](images/inspections-management.png)
 
 ---
 
